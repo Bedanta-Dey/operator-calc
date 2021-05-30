@@ -19,22 +19,34 @@ def start():
     if run == 'r':
         clear()
         main()
+
     elif run == 'q':
         clear()
+        print(Fore.GREEN + "Thanks for using! See you later!")
         exit() 
+        
     elif run == 'h':
         clear()
         print(Fore.YELLOW + "Welcome to the help section." + Fore.WHITE)
         print("1. Always use lowercase letters for input.")
-        print("2. If your program exits with 'Exit Code: 1', then your input was invalid. Choose a valid input.")
-        print("3. For calculations that involve more than 2 numbers, try calculating the value of them first, then involve")
-        print("them with the final calculation. This is done to prevent invalid results like 'Can't divide by zero'.")
+        print("2. If your program exits with 'Wizard Error: 1', then your input was invalid. Choose a valid input.")
+        print("3. If your program exits with 'Wizard Error: 2', then due to error the program will crash.")
+        print("4. For calculations that involve more than 2 numbers, try calculating the value of them first, then involve")
+        print("   them with the final calculation. This is done to prevent invalid results like 'Can't divide by zero'.")
     
-    cont = input('Press ' + Fore.GREEN + 'c ' + Fore.WHITE + 'to continue to the program. ')
+        cont = input('Press ' + Fore.GREEN + 'c ' + Fore.WHITE + 'to continue to the program. ')
+    
+    else:
+        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2)")
+        exit()
 
     if cont == 'c':
         clear()
         start()
+    else:
+        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2)")
+        exit()
+
 
 def main():
 
@@ -93,7 +105,7 @@ def main():
         print(Fore.RED + "ඞ  When the impostor is sus, AMOGUS! ඞ" + Fore.WHITE)
 
     else:
-        print(Fore.RED + "Encountered an error. Try again. (Exit Code: 1)")
+        print(Fore.RED + "Encountered an error. Try again. (Wizard Error: 1)")
 
     restart = input(Fore.WHITE +'Do you want to run the wizard again? [' + Fore.GREEN + 'y ' + Fore.WHITE + 'for Yes' + Fore.WHITE + ', ' + Fore.GREEN + 'n ' + Fore.WHITE + 'for No.] ' + Fore.WHITE)
 
@@ -107,7 +119,7 @@ def main():
         exit()
 
     else:
-        print(Fore.RED + "Encountered an error. Try again. (Exit Code: 1)")
+        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2)")
         exit()
 
 start()
