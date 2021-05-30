@@ -1,4 +1,6 @@
 # Operating Calculator
+You need to install `Colorama 0.4.4` using `pip`.
+
 A calculator that can perform all sorts of calculations in a very intuitive UI.
 
 Normally, in Python, we can calculate numbers. But it is a very old-fashioned and not very intuitive method. It is also not beginner friendly since you need to input all sorts of operators which you may not even know!
