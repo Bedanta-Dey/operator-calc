@@ -54,10 +54,10 @@ def main():
     print(Fore.GREEN + "a " + Fore.WHITE+ 'for Addition (+)')
     print(Fore.GREEN + "s " + Fore.WHITE+ "for Subtraction (-)")
     print(Fore.GREEN + "m " + Fore.WHITE+ "Multiplication (*)")
-    print(Fore.GREEN + "d " + Fore.WHITE+ "for Division (/) [Only 1st & 2nd number used]")
-    print(Fore.GREEN + "mo " + Fore.WHITE+ "for Modulus (%) [Only 1st & 2nd number used]")
+    print(Fore.GREEN + "d " + Fore.WHITE+ "for Division (/)")
+    print(Fore.GREEN + "mo " + Fore.WHITE+ "for Modulus (%)")
     print(Fore.GREEN + "e " + Fore.WHITE+ "for Exponentiation (^)")
-    print(Fore.GREEN + "fd " + Fore.WHITE+ "for Floor Division (//) [Only 1st & 2nd number used]")
+    print(Fore.GREEN + "fd " + Fore.WHITE+ "for Floor Division (//)")
 
     oper = input()
 
