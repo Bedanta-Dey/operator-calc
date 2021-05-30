@@ -88,6 +88,9 @@ def main():
     elif oper == 'fd':
         fdr = num1 // num2
         print(Fore.BLUE + "The answer is: " + Fore.WHITE+ str(fdr))
+    
+    elif oper == 'amogus':
+        print(Fore.RED + "ඞ  When the impostor is sus, AMOGUS! ඞ" + Fore.WHITE)
 
     else:
         print(Fore.RED + "Encountered an error. Try again. (Exit Code: 1)")
