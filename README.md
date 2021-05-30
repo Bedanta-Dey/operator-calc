@@ -5,6 +5,6 @@ Normally, in Python, we can calculate numbers. But it is a very old-fashioned an
 
 I bring to you *Operating Calculator*! Just input 2 numbers, choose your operation, and voila!
 
-Supports upto 2 numbers for now. (Update for 5 coming soon!)
+Supports upto 2 number calculations. (For calculations involving more than 2 numbers, first calculate them and then use the results in the final calculation.)
 
 Choose between a wide range of operations, let it be Addition, Subtraction, etc. The choice is yours!
