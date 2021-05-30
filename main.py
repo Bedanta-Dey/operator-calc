@@ -1,7 +1,7 @@
 import os
 import platform
 import colorama
-from colorama import Fore, Style
+from colorama import Fore
 colorama.init()
 
 def clear():
@@ -95,11 +95,16 @@ def main():
     else:
         print(Fore.RED + "Encountered an error. Try again. (Exit Code: 1)")
 
-    restart = input(Fore.WHITE +'Do you want to run the wizard again? [' + Fore.GREEN + 'y ' + Fore.WHITE + 'for Yes.] ' + Fore.WHITE)
+    restart = input(Fore.WHITE +'Do you want to run the wizard again? [' + Fore.GREEN + 'y ' + Fore.WHITE + 'for Yes' + Fore.WHITE + ', ' + Fore.GREEN + 'n ' + Fore.WHITE + 'for No.] ' + Fore.WHITE)
 
     if restart == 'y':
         clear()
         start()
+    
+    elif restart=='n':
+        clear()
+        print(Fore.GREEN + "Thanks for using! See you later!")
+        exit()
 
     else:
         print(Fore.RED + "Encountered an error. Try again. (Exit Code: 1)")
