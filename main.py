@@ -1,6 +1,7 @@
 import os
 import platform
 import colorama
+import time
 from colorama import Fore
 colorama.init()
 
@@ -22,7 +23,8 @@ def start():
 
     elif run == 'q':
         clear()
-        print(Fore.GREEN + "Thanks for using! See you later!")
+        print(Fore.GREEN + "Thanks for using! See you later! [Exiting in 3...]")
+        time.sleep(3)
         exit() 
         
     elif run == 'h':
@@ -37,14 +39,16 @@ def start():
         cont = input('Press ' + Fore.GREEN + 'c ' + Fore.WHITE + 'to continue to the program. ')
     
     else:
-        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2)")
+        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2) [Exiting in 3...]")
+        time.sleep(3)
         exit()
 
     if cont == 'c':
         clear()
         start()
     else:
-        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2)")
+        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2) [Exiting in 3...]")
+        time.sleep(3)
         exit()
 
 
@@ -65,7 +69,7 @@ def main():
     print(Fore.BLUE + "Choose your operator:")
     print(Fore.GREEN + "a " + Fore.WHITE+ 'for Addition (+)')
     print(Fore.GREEN + "s " + Fore.WHITE+ "for Subtraction (-)")
-    print(Fore.GREEN + "m " + Fore.WHITE+ "Multiplication (*)")
+    print(Fore.GREEN + "m " + Fore.WHITE+ "for Multiplication (*)")
     print(Fore.GREEN + "d " + Fore.WHITE+ "for Division (/)")
     print(Fore.GREEN + "mo " + Fore.WHITE+ "for Modulus (%)")
     print(Fore.GREEN + "e " + Fore.WHITE+ "for Exponentiation (^)")
@@ -115,11 +119,13 @@ def main():
     
     elif restart=='n':
         clear()
-        print(Fore.GREEN + "Thanks for using! See you later!")
+        print(Fore.GREEN + "Thanks for using! See you later! [Exiting in 3...]")
+        time.sleep(3)
         exit()
 
     else:
-        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2)")
+        print(Fore.RED + "Encountered an error. Closing the program... (Wizard Error: 2) [Exiting in 3...]")
+        time.sleep(3)
         exit()
 
 start()
